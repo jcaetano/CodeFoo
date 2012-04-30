@@ -6,7 +6,7 @@
 
 #### 2. Create a liquid layout with HTML, CSS, and Javascript. This layout must support the following resolutions: 1024x768, 1680x1050. Explain why you would use a liquid layout.
 
-   - Example: Please check the file liquidLayout.html.
+   - Example: Please check the file liquidLayout.html. (Nothing Fancy)
    - The reason you would use a liquid layout is that it supports all browsers on any size screen and will adjust itself to fit the content on that screen.
 
 #### 3.You own a license plate manufacturing company. Write a program that takes a population and determines the simplest pattern that will produce enough unique plates. Since all the plates that match the pattern will be generated, find the pattern that produces the least excess plates. Use a combination of letters (A-Z) and numbers (0-9).
