@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Fluid Layouts</title>
+   <style type="text/css">
+      #left {
+         float: left;
+         width: 30%;
+         border: 1px solid #000;
+      }
+
+      #right {
+         float: right;
+         width: 69%;
+         border: 1px solid #000;
+      }
+   </style>
+   
+   <script>
+      /*
+       * Since Javascript = objects but doesn't really like
+       * class or private/public functions. This is a really
+       * nice way to do that.
+       */
+      function Container() {
+         var exports = {};
+
+         // private function
+         function show_alert() {
+            alert("Javascript! :) View the source to see how fancy it is :)");
+         }
+
+         // public function
+         function run_me() {
+            show_alert();
+         }
+
+         exports.run_me = run_me;
+         return exports;
+      }
+
+      // you can lazy load this into mem.
+      var container = Container();
+   </script>
+</head>
+
+<body>
+
+   <div id="left">
+      <center><button onclick="container.run_me()">Press me!</button></center><br />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt, felis eu interdum vestibulum, lectus elit hendrerit sapien, vel mattis justo turpis non metus. Praesent accumsan neque sed sem porttitor fermentum. Nam tempus, nisl quis sagittis ullamcorper, erat nibh condimentum orci, in ultrices massa nisl nec nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras pretium, tellus sed hendrerit aliquet, metus turpis egestas eros, et lobortis mi ante eu enim. Proin in risus ac sapien viverra hendrerit. Duis luctus nibh et mi commodo ac facilisis ante fermentum. Cras commodo augue ac neque commodo id vulputate felis hendrerit. Praesent a scelerisque tellus. Curabitur lacus arcu, rutrum quis imperdiet ultricies, viverra id quam. Ut faucibus ultricies dignissim. Suspendisse interdum dapibus lectus nec ornare.
+
+      In mattis sollicitudin tortor, nec aliquam est lacinia et. Fusce porta aliquam commodo. Nam eget justo augue, vel dictum sem. Suspendisse mattis, velit ut egestas convallis, tellus orci viverra orci, nec convallis nulla ligula scelerisque libero. Fusce at commodo nulla. Nam eget dui sed quam dignissim mollis. Praesent velit odio, hendrerit pulvinar rutrum et, pellentesque at erat. Praesent posuere urna ac nulla elementum dapibus. Maecenas egestas nulla vitae nisi condimentum et fringilla mi dictum. Suspendisse nec magna urna. Vestibulum non nibh quis augue venenatis volutpat. Maecenas at aliquam ante.
+
+      Integer rhoncus lobortis risus nec tempus. Sed molestie mi justo, tincidunt rhoncus libero. Ut molestie auctor nunc sed laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec dictum aliquam orci in scelerisque. Vestibulum quis libero nulla, vel imperdiet tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc purus elit, rhoncus sit amet sagittis nec, gravida eu diam. Ut dolor mi, tincidunt quis fringilla eget, gravida quis ligula. Duis ut lectus mi. Nunc gravida leo non nibh tincidunt ac lobortis dolor cursus.
+
+      Donec vel neque ac odio auctor condimentum in et tortor. Duis turpis dui, mattis vitae rutrum ac, molestie sollicitudin sem. Suspendisse et dui faucibus nibh ultrices molestie vel bibendum lacus. Phasellus enim tortor, lobortis vitae venenatis eget, laoreet at magna. Mauris sem mauris, pulvinar a eleifend at, tempor ac justo. Nunc sed lectus tellus, eu suscipit nisi. Aliquam vel erat vitae nunc blandit consequat quis sit amet tellus. Suspendisse eget condimentum dolor. Vestibulum at iaculis tortor.
+
+      Suspendisse auctor, felis viverra laoreet imperdiet, erat erat volutpat purus, id tristique urna leo eget magna. Aenean eu enim quis nibh sollicitudin laoreet id sed risus. Praesent nisi lacus, eleifend ut mattis a, ultrices sed arcu. Etiam tortor metus, rhoncus a vestibulum et, molestie quis magna. Etiam faucibus sem vitae nulla tristique consequat. Curabitur non libero tortor, ac semper lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque nulla ante, pellentesque nec euismod a, euismod et nisl.
+   </div>
+
+   <div id="right">
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt, felis eu interdum vestibulum, lectus elit hendrerit sapien, vel mattis justo turpis non metus. Praesent accumsan neque sed sem porttitor fermentum. Nam tempus, nisl quis sagittis ullamcorper, erat nibh condimentum orci, in ultrices massa nisl nec nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras pretium, tellus sed hendrerit aliquet, metus turpis egestas eros, et lobortis mi ante eu enim. Proin in risus ac sapien viverra hendrerit. Duis luctus nibh et mi commodo ac facilisis ante fermentum. Cras commodo augue ac neque commodo id vulputate felis hendrerit. Praesent a scelerisque tellus. Curabitur lacus arcu, rutrum quis imperdiet ultricies, viverra id quam. Ut faucibus ultricies dignissim. Suspendisse interdum dapibus lectus nec ornare.
+
+   In mattis sollicitudin tortor, nec aliquam est lacinia et. Fusce porta aliquam commodo. Nam eget justo augue, vel dictum sem. Suspendisse mattis, velit ut egestas convallis, tellus orci viverra orci, nec convallis nulla ligula scelerisque libero. Fusce at commodo nulla. Nam eget dui sed quam dignissim mollis. Praesent velit odio, hendrerit pulvinar rutrum et, pellentesque at erat. Praesent posuere urna ac nulla elementum dapibus. Maecenas egestas nulla vitae nisi condimentum et fringilla mi dictum. Suspendisse nec magna urna. Vestibulum non nibh quis augue venenatis volutpat. Maecenas at aliquam ante.
+
+   Integer rhoncus lobortis risus nec tempus. Sed molestie mi justo, tincidunt rhoncus libero. Ut molestie auctor nunc sed laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec dictum aliquam orci in scelerisque. Vestibulum quis libero nulla, vel imperdiet tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc purus elit, rhoncus sit amet sagittis nec, gravida eu diam. Ut dolor mi, tincidunt quis fringilla eget, gravida quis ligula. Duis ut lectus mi. Nunc gravida leo non nibh tincidunt ac lobortis dolor cursus.
+
+   Donec vel neque ac odio auctor condimentum in et tortor. Duis turpis dui, mattis vitae rutrum ac, molestie sollicitudin sem. Suspendisse et dui faucibus nibh ultrices molestie vel bibendum lacus. Phasellus enim tortor, lobortis vitae venenatis eget, laoreet at magna. Mauris sem mauris, pulvinar a eleifend at, tempor ac justo. Nunc sed lectus tellus, eu suscipit nisi. Aliquam vel erat vitae nunc blandit consequat quis sit amet tellus. Suspendisse eget condimentum dolor. Vestibulum at iaculis tortor.
+
+   Suspendisse auctor, felis viverra laoreet imperdiet, erat erat volutpat purus, id tristique urna leo eget magna. Aenean eu enim quis nibh sollicitudin laoreet id sed risus. Praesent nisi lacus, eleifend ut mattis a, ultrices sed arcu. Etiam tortor metus, rhoncus a vestibulum et, molestie quis magna. Etiam faucibus sem vitae nulla tristique consequat. Curabitur non libero tortor, ac semper lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque nulla ante, pellentesque nec euismod a, euismod et nisl.
+   </div>
+</body>
