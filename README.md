@@ -17,6 +17,6 @@
 
 #### Bonus: Submit a short video (less than 2 minutes) introducing yourself, showing your passion for IGN, and telling us why you're a good fit for Code-Foo.
 
-   - Video on its way.
+   - http://youtu.be/iUPzIMbsAKg
 
 #### Bonus: Programmatically create a game of Connect 4™ with one AI-controlled opponent and a human-controlled player.
